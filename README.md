@@ -24,5 +24,4 @@
 
 1. **Clone Repository นี้ลงเครื่อง:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/Student-Management.git](https://github.com/YOUR_USERNAME/Student-Management.git)
-   cd Student-Management
+   git clone https://github.com/palm90150/Student-Management.git
