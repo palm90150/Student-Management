@@ -25,3 +25,20 @@
 1. **Clone Repository นี้ลงเครื่อง:**
    ```bash
    git clone https://github.com/palm90150/Student-Management.git
+
+ติดตั้ง Packages ทั้งหมด:
+npm install
+
+ตั้งค่า Environment Variables (.env)
+สร้างไฟล์ .env ที่ root ของโปรเจกต์ และใส่ข้อมูลดังนี้
+DATABASE_URL="file:./dev.db"
+BETTER_AUTH_SECRET="ใส่-auth-secret-ของคุณ"
+
+เตรียมฐานข้อมูล (Prisma Migration)
+npx prisma migrate dev --name init_db
+npx prisma generate
+
+เปิดรันโปรเจกต์ (Development Mode)
+npm run dev
+
+เปิดเบราว์เซอร์ไปที่ http://localhost:3000/login เพื่อทดสอบใช้งานระบบ
